@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GarageFlow -- Growth Engine Dashboard</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">GF</span>
+        <div>
+          <div class="brand-title">GarageFlow</div>
+          <div class="brand-subtitle">Growth Engine</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#/" data-route="/" class="nav-link">
+          <span class="nav-icon">&#9673;</span> Overview
+        </a>
+        <a href="#/leads" data-route="/leads" class="nav-link">
+          <span class="nav-icon">&#9737;</span> Oficinas (Leads)
+        </a>
+        <a href="#/coverage" data-route="/coverage" class="nav-link">
+          <span class="nav-icon">&#8982;</span> Cobertura
+        </a>
+        <a href="#/history" data-route="/history" class="nav-link">
+          <span class="nav-icon">&#128200;</span> Histórico
+        </a>
+        <a href="#/emails" data-route="/emails" class="nav-link">
+          <span class="nav-icon">&#9993;</span> Emails
+        </a>
+        <a href="#/agents" data-route="/agents" class="nav-link">
+          <span class="nav-icon">&#9881;</span> Robôs
+        </a>
+        <a href="#/reports" data-route="/reports" class="nav-link">
+          <span class="nav-icon">&#8801;</span> Relatórios
+        </a>
+        <a href="#/settings" data-route="/settings" class="nav-link">
+          <span class="nav-icon">&#9998;</span> Configuração
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <div id="connIndicator" class="conn-indicator conn-unknown">
+          <span class="dot"></span> a verificar ligação…
+        </div>
+        <button id="secretBtn" class="secret-btn" type="button">Chave de acesso</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1 id="pageTitle">Overview</h1>
+        <div id="pageSubtitle" class="page-subtitle"></div>
+      </header>
+      <div id="content" class="content"></div>
+    </main>
+  </div>
+
+  <div id="modalRoot"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
